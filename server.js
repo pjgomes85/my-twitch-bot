@@ -5,8 +5,8 @@ const tmi = require('tmi.js');
 const regexpCommand = new RegExp(/^!([a-zA-Z0-9]+)(?:\W+)?(.*)?/);
 
 const commands = {
-  website: {
-    response: 'https://spacejellybot.org'
+  youtube: {
+    response: 'https://www.youtube.com/channel/UCGFqxHUCeLnD8pwaX3F-HOQ'
   },
   upvote: {
     response: (user) => `User ${user} was just upvoted`
