@@ -32,18 +32,3 @@ client.on('message', (channel, tags, message, self) => {
 
   const [raw, command, argument] = message.match(regexpCommand);
 
-  const {response} = commands[command] || {};
-
-  if (typeof response === 'function' ) {
-    client.say(channel, response(tags.username))
-  } else if (typeof response === 'string') {
-    client.say(channel, response)
-  }
-
- 
-  // {
-  //   client.say(channel, `Message "${message}" was sent by ${tags.username}`)
-  // }
-
-	console.log(`${tags['display-name']}: ${message}`);
-});
