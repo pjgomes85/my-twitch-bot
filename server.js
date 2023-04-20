@@ -10,13 +10,16 @@ const commands = {
   },
   upvote: {
     response: (user) => `User ${user} was just upvoted`
-  }
+  },
+  teste: {
+    response: (user) => `So para testar ${user} ;)`
+  },
 }
 
 const client = new tmi.Client({
 
 
-	channels: [ 'paulogomes_twitch' ],
+	channels: [ 'captaingomestv' ],
   identity: {
 		username: process.env.TWITCH_BOT_USERNAME,
 		password: process.env.TWITCH_OAUTH_TOKEN
