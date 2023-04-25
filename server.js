@@ -52,7 +52,6 @@ const commands = {
     ${user3}
     ${user4}
     ${user5}
-    ${user5}
     ${user6}
     ${user7}
     ${user8}
@@ -61,8 +60,19 @@ const commands = {
     ${user11}
     ${user12}
     ${user13}
-    ${user14}`
-  }
+    ${user14}
+    ${user15}
+    ${user16}
+    ${user17}
+    ${user18}
+    ${user19}
+    ${user20}
+    ${user21}
+    ${user23}
+    ${user24}
+    ${user25}
+    `
+  },
 }
 
 const client = new tmi.Client({
